@@ -53,6 +53,7 @@ github.com/cloudwego/frugal v0.1.7 h1:Ggyk8mk0WrhBlM4g4RJxdOcVWJl/Hxbd8NJ19J8My6
 github.com/cloudwego/frugal v0.1.7/go.mod h1:3VECBCSiTYwm3QApqHXjZB9NDH+8hUw7txxlr+6pPb4=
 github.com/cloudwego/kitex v0.3.2/go.mod h1:/XD07VpUD9VQWmmoepASgZ6iw//vgWikVA9MpzLC5i0=
 github.com/cloudwego/kitex v0.4.4/go.mod h1:3FcH5h9Qw+dhRljSzuGSpWuThttA8DvK0BsL7HUYydo=
+github.com/cloudwego/kitex v0.6.1 h1:VwWlyFZCNl2SoBgWeCMjUg+EFSSJGw1Nsc1/h9S6IDs=
 github.com/cloudwego/kitex v0.6.1/go.mod h1:zI1GBrjT0qloTikcCfQTgxg3Ws+yQMyaChEEOcGNUvA=
 github.com/cloudwego/netpoll v0.2.4/go.mod h1:1T2WVuQ+MQw6h6DpE45MohSvDTKdy2DlzCx2KsnPI4E=
 github.com/cloudwego/netpoll v0.3.1/go.mod h1:1T2WVuQ+MQw6h6DpE45MohSvDTKdy2DlzCx2KsnPI4E=
