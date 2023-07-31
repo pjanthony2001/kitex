@@ -20,8 +20,8 @@ import (
 	"context"
 	"runtime/debug"
 
-	"github.com/cloudwego/kitex/pkg/klog"
-	"github.com/cloudwego/kitex/pkg/stats"
+	"github.com/pjanthony2001/kitex/pkg/klog"
+	"github.com/pjanthony2001/kitex/pkg/stats"
 )
 
 // TraceController controls tracers.

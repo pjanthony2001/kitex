@@ -22,7 +22,7 @@ import (
 
 	"golang.org/x/sync/singleflight"
 
-	"github.com/cloudwego/kitex/pkg/utils"
+	"github.com/pjanthony2001/kitex/pkg/utils"
 )
 
 var (

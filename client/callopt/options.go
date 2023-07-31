@@ -24,13 +24,13 @@ import (
 	"sync"
 	"time"
 
-	"github.com/cloudwego/kitex/internal/client"
-	"github.com/cloudwego/kitex/pkg/discovery"
-	"github.com/cloudwego/kitex/pkg/fallback"
-	"github.com/cloudwego/kitex/pkg/http"
-	"github.com/cloudwego/kitex/pkg/retry"
-	"github.com/cloudwego/kitex/pkg/rpcinfo"
-	"github.com/cloudwego/kitex/pkg/rpcinfo/remoteinfo"
+	"github.com/pjanthony2001/kitex/internal/client"
+	"github.com/pjanthony2001/kitex/pkg/discovery"
+	"github.com/pjanthony2001/kitex/pkg/fallback"
+	"github.com/pjanthony2001/kitex/pkg/http"
+	"github.com/pjanthony2001/kitex/pkg/retry"
+	"github.com/pjanthony2001/kitex/pkg/rpcinfo"
+	"github.com/pjanthony2001/kitex/pkg/rpcinfo/remoteinfo"
 )
 
 var callOptionsPool = sync.Pool{

@@ -24,14 +24,14 @@ import (
 
 	"github.com/bytedance/gopkg/cloud/metainfo"
 
-	"github.com/cloudwego/kitex/client/callopt"
-	"github.com/cloudwego/kitex/internal/client"
-	internal_server "github.com/cloudwego/kitex/internal/server"
-	"github.com/cloudwego/kitex/pkg/endpoint"
-	"github.com/cloudwego/kitex/pkg/klog"
-	"github.com/cloudwego/kitex/pkg/rpcinfo"
-	"github.com/cloudwego/kitex/pkg/serviceinfo"
-	"github.com/cloudwego/kitex/pkg/utils"
+	"github.com/pjanthony2001/kitex/client/callopt"
+	"github.com/pjanthony2001/kitex/internal/client"
+	internal_server "github.com/pjanthony2001/kitex/internal/server"
+	"github.com/pjanthony2001/kitex/pkg/endpoint"
+	"github.com/pjanthony2001/kitex/pkg/klog"
+	"github.com/pjanthony2001/kitex/pkg/rpcinfo"
+	"github.com/pjanthony2001/kitex/pkg/serviceinfo"
+	"github.com/pjanthony2001/kitex/pkg/utils"
 )
 
 var localAddr net.Addr

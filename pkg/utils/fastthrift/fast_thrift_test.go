@@ -19,8 +19,8 @@ package fastthrift
 import (
 	"testing"
 
-	mocks "github.com/cloudwego/kitex/internal/mocks/thrift/fast"
-	"github.com/cloudwego/kitex/internal/test"
+	mocks "github.com/pjanthony2001/kitex/internal/mocks/thrift/fast"
+	"github.com/pjanthony2001/kitex/internal/test"
 )
 
 var (

@@ -19,7 +19,7 @@ package client
 import (
 	"context"
 
-	"github.com/cloudwego/kitex/pkg/endpoint"
+	"github.com/pjanthony2001/kitex/pkg/endpoint"
 )
 
 type ctxMWChainKey struct{}

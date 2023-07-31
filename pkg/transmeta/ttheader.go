@@ -21,12 +21,12 @@ import (
 	"fmt"
 	"strconv"
 
-	"github.com/cloudwego/kitex/pkg/kerrors"
-	"github.com/cloudwego/kitex/pkg/remote"
-	"github.com/cloudwego/kitex/pkg/remote/transmeta"
-	"github.com/cloudwego/kitex/pkg/rpcinfo"
-	"github.com/cloudwego/kitex/pkg/utils"
-	"github.com/cloudwego/kitex/transport"
+	"github.com/pjanthony2001/kitex/pkg/kerrors"
+	"github.com/pjanthony2001/kitex/pkg/remote"
+	"github.com/pjanthony2001/kitex/pkg/remote/transmeta"
+	"github.com/pjanthony2001/kitex/pkg/rpcinfo"
+	"github.com/pjanthony2001/kitex/pkg/utils"
+	"github.com/pjanthony2001/kitex/transport"
 )
 
 const (

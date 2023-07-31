@@ -20,11 +20,11 @@ package transmeta
 import (
 	"context"
 
-	"github.com/cloudwego/kitex/pkg/remote"
-	"github.com/cloudwego/kitex/pkg/remote/trans/nphttp2/metadata"
-	"github.com/cloudwego/kitex/pkg/remote/transmeta"
-	"github.com/cloudwego/kitex/pkg/rpcinfo"
-	"github.com/cloudwego/kitex/transport"
+	"github.com/pjanthony2001/kitex/pkg/remote"
+	"github.com/pjanthony2001/kitex/pkg/remote/trans/nphttp2/metadata"
+	"github.com/pjanthony2001/kitex/pkg/remote/transmeta"
+	"github.com/pjanthony2001/kitex/pkg/rpcinfo"
+	"github.com/pjanthony2001/kitex/transport"
 )
 
 // ClientHTTP2Handler default global client metadata handler

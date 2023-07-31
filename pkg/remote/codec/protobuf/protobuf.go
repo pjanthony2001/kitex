@@ -23,9 +23,9 @@ import (
 
 	"github.com/cloudwego/fastpb"
 
-	"github.com/cloudwego/kitex/pkg/remote"
-	"github.com/cloudwego/kitex/pkg/remote/codec"
-	"github.com/cloudwego/kitex/pkg/remote/codec/perrors"
+	"github.com/pjanthony2001/kitex/pkg/remote"
+	"github.com/pjanthony2001/kitex/pkg/remote/codec"
+	"github.com/pjanthony2001/kitex/pkg/remote/codec/perrors"
 )
 
 /**

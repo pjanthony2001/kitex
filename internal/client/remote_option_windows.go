@@ -21,9 +21,9 @@
 package client
 
 import (
-	"github.com/cloudwego/kitex/pkg/remote"
-	"github.com/cloudwego/kitex/pkg/remote/codec"
-	"github.com/cloudwego/kitex/pkg/remote/trans/gonet"
+	"github.com/pjanthony2001/kitex/pkg/remote"
+	"github.com/pjanthony2001/kitex/pkg/remote/codec"
+	"github.com/pjanthony2001/kitex/pkg/remote/trans/gonet"
 )
 
 func newClientRemoteOption() *remote.ClientOption {

@@ -27,16 +27,16 @@ import (
 
 	"github.com/golang/mock/gomock"
 
-	"github.com/cloudwego/kitex/client/callopt"
-	"github.com/cloudwego/kitex/internal/client"
-	"github.com/cloudwego/kitex/internal/mocks"
-	internal_server "github.com/cloudwego/kitex/internal/server"
-	"github.com/cloudwego/kitex/internal/test"
-	"github.com/cloudwego/kitex/pkg/endpoint"
-	"github.com/cloudwego/kitex/pkg/kerrors"
-	"github.com/cloudwego/kitex/pkg/rpcinfo"
-	"github.com/cloudwego/kitex/pkg/rpcinfo/remoteinfo"
-	"github.com/cloudwego/kitex/pkg/serviceinfo"
+	"github.com/pjanthony2001/kitex/client/callopt"
+	"github.com/pjanthony2001/kitex/internal/client"
+	"github.com/pjanthony2001/kitex/internal/mocks"
+	internal_server "github.com/pjanthony2001/kitex/internal/server"
+	"github.com/pjanthony2001/kitex/internal/test"
+	"github.com/pjanthony2001/kitex/pkg/endpoint"
+	"github.com/pjanthony2001/kitex/pkg/kerrors"
+	"github.com/pjanthony2001/kitex/pkg/rpcinfo"
+	"github.com/pjanthony2001/kitex/pkg/rpcinfo/remoteinfo"
+	"github.com/pjanthony2001/kitex/pkg/serviceinfo"
 )
 
 type serverInitialInfoImpl struct{}

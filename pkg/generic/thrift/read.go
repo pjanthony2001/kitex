@@ -24,8 +24,8 @@ import (
 	"github.com/apache/thrift/lib/go/thrift"
 	"github.com/jhump/protoreflect/desc"
 
-	"github.com/cloudwego/kitex/pkg/generic/descriptor"
-	"github.com/cloudwego/kitex/pkg/generic/proto"
+	"github.com/pjanthony2001/kitex/pkg/generic/descriptor"
+	"github.com/pjanthony2001/kitex/pkg/generic/proto"
 )
 
 var emptyPbDsc = &desc.MessageDescriptor{}

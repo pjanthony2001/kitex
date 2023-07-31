@@ -25,7 +25,7 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/cloudwego/kitex/internal/test"
+	"github.com/pjanthony2001/kitex/internal/test"
 )
 
 func TestIsKitexError(t *testing.T) {

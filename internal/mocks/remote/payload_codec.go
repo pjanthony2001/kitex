@@ -25,7 +25,7 @@ import (
 	context "context"
 	reflect "reflect"
 
-	remote "github.com/cloudwego/kitex/pkg/remote"
+	remote "github.com/pjanthony2001/kitex/pkg/remote"
 	gomock "github.com/golang/mock/gomock"
 )
 

@@ -22,10 +22,10 @@ import (
 	"errors"
 	"reflect"
 
-	"github.com/cloudwego/kitex/pkg/kerrors"
-	"github.com/cloudwego/kitex/pkg/klog"
-	"github.com/cloudwego/kitex/pkg/rpcinfo"
-	"github.com/cloudwego/kitex/pkg/utils"
+	"github.com/pjanthony2001/kitex/pkg/kerrors"
+	"github.com/pjanthony2001/kitex/pkg/klog"
+	"github.com/pjanthony2001/kitex/pkg/rpcinfo"
+	"github.com/pjanthony2001/kitex/pkg/utils"
 )
 
 // ErrorFallback is to build fallback policy for error.

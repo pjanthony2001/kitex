@@ -25,11 +25,11 @@ import (
 
 	"github.com/bytedance/gopkg/cloud/circuitbreaker"
 
-	"github.com/cloudwego/kitex/pkg/discovery"
-	"github.com/cloudwego/kitex/pkg/endpoint"
-	"github.com/cloudwego/kitex/pkg/event"
-	"github.com/cloudwego/kitex/pkg/kerrors"
-	"github.com/cloudwego/kitex/pkg/rpcinfo"
+	"github.com/pjanthony2001/kitex/pkg/discovery"
+	"github.com/pjanthony2001/kitex/pkg/endpoint"
+	"github.com/pjanthony2001/kitex/pkg/event"
+	"github.com/pjanthony2001/kitex/pkg/kerrors"
+	"github.com/pjanthony2001/kitex/pkg/rpcinfo"
 )
 
 const (

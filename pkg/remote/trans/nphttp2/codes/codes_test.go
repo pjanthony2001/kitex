@@ -19,7 +19,7 @@ package codes
 import (
 	"testing"
 
-	"github.com/cloudwego/kitex/internal/test"
+	"github.com/pjanthony2001/kitex/internal/test"
 )
 
 func TestUnmarshalJSON(t *testing.T) {

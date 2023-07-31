@@ -28,12 +28,12 @@ import (
 
 	"github.com/jhump/protoreflect/desc"
 
-	"github.com/cloudwego/kitex/pkg/generic/descriptor"
-	"github.com/cloudwego/kitex/pkg/generic/proto"
-	"github.com/cloudwego/kitex/pkg/generic/thrift"
-	"github.com/cloudwego/kitex/pkg/remote"
-	"github.com/cloudwego/kitex/pkg/remote/codec"
-	"github.com/cloudwego/kitex/pkg/serviceinfo"
+	"github.com/pjanthony2001/kitex/pkg/generic/descriptor"
+	"github.com/pjanthony2001/kitex/pkg/generic/proto"
+	"github.com/pjanthony2001/kitex/pkg/generic/thrift"
+	"github.com/pjanthony2001/kitex/pkg/remote"
+	"github.com/pjanthony2001/kitex/pkg/remote/codec"
+	"github.com/pjanthony2001/kitex/pkg/serviceinfo"
 )
 
 type httpPbThriftCodec struct {

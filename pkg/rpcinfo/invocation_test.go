@@ -19,7 +19,7 @@ package rpcinfo
 import (
 	"testing"
 
-	"github.com/cloudwego/kitex/internal/test"
+	"github.com/pjanthony2001/kitex/internal/test"
 )
 
 func TestInvocation(t *testing.T) {

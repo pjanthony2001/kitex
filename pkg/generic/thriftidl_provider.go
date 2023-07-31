@@ -23,8 +23,8 @@ import (
 
 	"github.com/cloudwego/thriftgo/parser"
 
-	"github.com/cloudwego/kitex/pkg/generic/descriptor"
-	"github.com/cloudwego/kitex/pkg/generic/thrift"
+	"github.com/pjanthony2001/kitex/pkg/generic/descriptor"
+	"github.com/pjanthony2001/kitex/pkg/generic/thrift"
 )
 
 var (

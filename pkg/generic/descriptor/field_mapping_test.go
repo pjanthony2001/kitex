@@ -19,7 +19,7 @@ package descriptor
 import (
 	"testing"
 
-	"github.com/cloudwego/kitex/internal/test"
+	"github.com/pjanthony2001/kitex/internal/test"
 )
 
 func Test_goTag_Handle(t *testing.T) {

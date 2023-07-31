@@ -17,23 +17,22 @@
 package generic
 
 import (
-	"fmt"
 	"context"
+	"fmt"
 	"sync/atomic"
 
-	"github.com/cloudwego/kitex/pkg/generic/descriptor"
-	"github.com/cloudwego/kitex/pkg/generic/thrift"
-	//"github.com/cloudwego/kitex/pkg/generic/thrift"
+	"github.com/pjanthony2001/kitex/pkg/generic/descriptor"
+	"github.com/pjanthony2001/kitex/pkg/generic/thrift"
+	//"github.com/pjanthony2001/kitex/pkg/generic/thrift"
 	//added the extran version
-	"github.com/cloudwego/kitex/pkg/remote"
-	"github.com/cloudwego/kitex/pkg/remote/codec"
-	"github.com/cloudwego/kitex/pkg/remote/codec/perrors"
-	"github.com/cloudwego/kitex/pkg/serviceinfo"
-
+	"github.com/pjanthony2001/kitex/pkg/remote"
+	"github.com/pjanthony2001/kitex/pkg/remote/codec"
+	"github.com/pjanthony2001/kitex/pkg/remote/codec/perrors"
+	"github.com/pjanthony2001/kitex/pkg/serviceinfo"
 
 	"github.com/jhump/protoreflect/desc"
 	"github.com/jhump/protoreflect/dynamic"
-	"github.com/cloudwego/kitex/pkg/generic/proto"
+	"github.com/pjanthony2001/kitex/pkg/generic/proto"
 )
 
 var (
@@ -58,6 +57,7 @@ func newJsonProtoCodec(p PbDescriptorProvider, codec remote.PayloadCodec) (*json
 	go c.update()
 	return c, nil
 }
+
 // done
 
 func (c *jsonProtoCodec) update() {
@@ -69,6 +69,7 @@ func (c *jsonProtoCodec) update() {
 		c.svcDsc.Store(svc)
 	}
 }
+
 //
 
 func (c *jsonProtoCodec) Marshal(ctx context.Context, msg remote.Message, out remote.ByteBuffer) error {
@@ -85,11 +86,6 @@ func (c *jsonProtoCodec) Marshal(ctx context.Context, msg remote.Message, out re
 	}
 
 	//https://pkg.go.dev/github.com/jhump/protoreflect@v1.8.2/desc#ServiceDescriptor.FindMethodByName
-
-
-
-	
-
 
 	wm, err := thrift.NewWriteJSON(svcDsc, method, msg.RPCRole() == remote.Client)
 

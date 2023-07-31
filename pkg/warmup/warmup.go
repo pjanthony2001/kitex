@@ -17,8 +17,8 @@
 package warmup
 
 import (
-	"github.com/cloudwego/kitex/pkg/remote"
-	"github.com/cloudwego/kitex/pkg/rpcinfo"
+	"github.com/pjanthony2001/kitex/pkg/remote"
+	"github.com/pjanthony2001/kitex/pkg/rpcinfo"
 )
 
 // ErrorHandling controls how to handle error

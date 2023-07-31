@@ -19,7 +19,7 @@ package nphttp2
 import (
 	"testing"
 
-	"github.com/cloudwego/kitex/internal/test"
+	"github.com/pjanthony2001/kitex/internal/test"
 )
 
 func TestClientConn(t *testing.T) {

@@ -21,7 +21,7 @@ import (
 	"sync"
 	"time"
 
-	"github.com/cloudwego/kitex/pkg/gofunc"
+	"github.com/pjanthony2001/kitex/pkg/gofunc"
 )
 
 type TickerTask interface {

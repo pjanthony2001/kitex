@@ -27,12 +27,12 @@ import (
 
 	"github.com/golang/mock/gomock"
 
-	mocksnetpoll "github.com/cloudwego/kitex/internal/mocks/netpoll"
-	mocksremote "github.com/cloudwego/kitex/internal/mocks/remote"
+	mocksnetpoll "github.com/pjanthony2001/kitex/internal/mocks/netpoll"
+	mocksremote "github.com/pjanthony2001/kitex/internal/mocks/remote"
 
-	"github.com/cloudwego/kitex/internal/test"
-	dialer "github.com/cloudwego/kitex/pkg/remote"
-	"github.com/cloudwego/kitex/pkg/utils"
+	"github.com/pjanthony2001/kitex/internal/test"
+	dialer "github.com/pjanthony2001/kitex/pkg/remote"
+	"github.com/pjanthony2001/kitex/pkg/utils"
 )
 
 var (

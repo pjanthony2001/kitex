@@ -27,9 +27,9 @@ import (
 	"github.com/bytedance/gopkg/util/xxhash3"
 	"golang.org/x/sync/singleflight"
 
-	"github.com/cloudwego/kitex/pkg/discovery"
-	"github.com/cloudwego/kitex/pkg/gofunc"
-	"github.com/cloudwego/kitex/pkg/utils"
+	"github.com/pjanthony2001/kitex/pkg/discovery"
+	"github.com/pjanthony2001/kitex/pkg/gofunc"
+	"github.com/pjanthony2001/kitex/pkg/utils"
 )
 
 /*

@@ -22,12 +22,12 @@ import (
 
 	"github.com/apache/thrift/lib/go/thrift"
 
-	kt "github.com/cloudwego/kitex/internal/mocks/thrift"
-	"github.com/cloudwego/kitex/internal/test"
-	"github.com/cloudwego/kitex/pkg/remote"
-	"github.com/cloudwego/kitex/pkg/rpcinfo"
-	"github.com/cloudwego/kitex/pkg/serviceinfo"
-	"github.com/cloudwego/kitex/pkg/utils"
+	kt "github.com/pjanthony2001/kitex/internal/mocks/thrift"
+	"github.com/pjanthony2001/kitex/internal/test"
+	"github.com/pjanthony2001/kitex/pkg/remote"
+	"github.com/pjanthony2001/kitex/pkg/rpcinfo"
+	"github.com/pjanthony2001/kitex/pkg/serviceinfo"
+	"github.com/pjanthony2001/kitex/pkg/utils"
 )
 
 func TestBinaryThriftCodec(t *testing.T) {

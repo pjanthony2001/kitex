@@ -21,8 +21,8 @@ import (
 
 	"golang.org/x/sync/singleflight"
 
-	"github.com/cloudwego/kitex/pkg/discovery"
-	"github.com/cloudwego/kitex/pkg/klog"
+	"github.com/pjanthony2001/kitex/pkg/discovery"
+	"github.com/pjanthony2001/kitex/pkg/klog"
 )
 
 const (

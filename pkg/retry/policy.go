@@ -19,7 +19,7 @@ package retry
 import (
 	"fmt"
 
-	"github.com/cloudwego/kitex/pkg/rpcinfo"
+	"github.com/pjanthony2001/kitex/pkg/rpcinfo"
 )
 
 // Type is retry type include FailureType, BackupType

@@ -22,8 +22,8 @@ import (
 
 	"github.com/golang/mock/gomock"
 
-	mockutils "github.com/cloudwego/kitex/internal/mocks/utils"
-	"github.com/cloudwego/kitex/internal/test"
+	mockutils "github.com/pjanthony2001/kitex/internal/mocks/utils"
+	"github.com/pjanthony2001/kitex/internal/test"
 )
 
 func TestSharedTickerAdd(t *testing.T) {

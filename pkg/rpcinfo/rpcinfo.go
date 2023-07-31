@@ -19,7 +19,7 @@ package rpcinfo
 import (
 	"sync"
 
-	"github.com/cloudwego/kitex/internal"
+	"github.com/pjanthony2001/kitex/internal"
 )
 
 var rpcInfoPool sync.Pool

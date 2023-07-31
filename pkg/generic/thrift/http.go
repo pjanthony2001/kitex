@@ -21,7 +21,7 @@ import (
 
 	"github.com/apache/thrift/lib/go/thrift"
 
-	"github.com/cloudwego/kitex/pkg/generic/descriptor"
+	"github.com/pjanthony2001/kitex/pkg/generic/descriptor"
 )
 
 // WriteHTTPRequest implement of MessageWriter

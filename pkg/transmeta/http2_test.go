@@ -21,12 +21,12 @@ import (
 	"context"
 	"testing"
 
-	"github.com/cloudwego/kitex/internal/test"
-	"github.com/cloudwego/kitex/pkg/remote/trans/nphttp2/metadata"
-	"github.com/cloudwego/kitex/pkg/remote/transmeta"
-	"github.com/cloudwego/kitex/pkg/rpcinfo"
+	"github.com/pjanthony2001/kitex/internal/test"
+	"github.com/pjanthony2001/kitex/pkg/remote/trans/nphttp2/metadata"
+	"github.com/pjanthony2001/kitex/pkg/remote/transmeta"
+	"github.com/pjanthony2001/kitex/pkg/rpcinfo"
 
-	"github.com/cloudwego/kitex/transport"
+	"github.com/pjanthony2001/kitex/transport"
 )
 
 func TestIsGRPC(t *testing.T) {

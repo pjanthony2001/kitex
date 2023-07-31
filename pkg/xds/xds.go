@@ -17,8 +17,8 @@
 package xds
 
 import (
-	"github.com/cloudwego/kitex/pkg/discovery"
-	"github.com/cloudwego/kitex/pkg/endpoint"
+	"github.com/pjanthony2001/kitex/pkg/discovery"
+	"github.com/pjanthony2001/kitex/pkg/endpoint"
 )
 
 // ClientSuite includes all extensions used by the xDS-enabled client.

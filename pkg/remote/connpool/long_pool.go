@@ -25,10 +25,10 @@ import (
 	"sync/atomic"
 	"time"
 
-	"github.com/cloudwego/kitex/pkg/connpool"
-	"github.com/cloudwego/kitex/pkg/remote"
-	"github.com/cloudwego/kitex/pkg/utils"
-	"github.com/cloudwego/kitex/pkg/warmup"
+	"github.com/pjanthony2001/kitex/pkg/connpool"
+	"github.com/pjanthony2001/kitex/pkg/remote"
+	"github.com/pjanthony2001/kitex/pkg/utils"
+	"github.com/pjanthony2001/kitex/pkg/warmup"
 )
 
 var (

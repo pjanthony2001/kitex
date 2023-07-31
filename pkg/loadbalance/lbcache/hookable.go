@@ -19,8 +19,8 @@ package lbcache
 import (
 	"sync"
 
-	"github.com/cloudwego/kitex/pkg/discovery"
-	"github.com/cloudwego/kitex/pkg/loadbalance"
+	"github.com/pjanthony2001/kitex/pkg/discovery"
+	"github.com/pjanthony2001/kitex/pkg/loadbalance"
 )
 
 // intercept the rebalancer and call hooks

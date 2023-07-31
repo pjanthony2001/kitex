@@ -18,7 +18,7 @@ import (
 	"os"
 	"testing"
 
-	"github.com/cloudwego/kitex/internal/test"
+	"github.com/pjanthony2001/kitex/internal/test"
 )
 
 func TestCombineOutputPath(t *testing.T) {

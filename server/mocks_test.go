@@ -17,7 +17,7 @@
 package server
 
 import (
-	"github.com/cloudwego/kitex/pkg/registry"
+	"github.com/pjanthony2001/kitex/pkg/registry"
 )
 
 var _ registry.Registry = &MockRegistry{}

@@ -20,7 +20,7 @@ import (
 	"net"
 	"time"
 
-	"github.com/cloudwego/kitex/pkg/utils"
+	"github.com/pjanthony2001/kitex/pkg/utils"
 )
 
 const (

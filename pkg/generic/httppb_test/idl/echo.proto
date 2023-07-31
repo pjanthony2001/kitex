@@ -1,7 +1,7 @@
 syntax="proto3";
 package idl;
 
-option go_package = "github.com/cloudwego/kitex/pkg/generic/httppb_test/idl";
+option go_package = "github.com/pjanthony2001/kitex/pkg/generic/httppb_test/idl";
 
 enum TestEnum {
   Zero = 0;

@@ -21,7 +21,7 @@ import (
 	"reflect"
 	"sync"
 
-	"github.com/cloudwego/kitex/pkg/gofunc"
+	"github.com/pjanthony2001/kitex/pkg/gofunc"
 )
 
 // Callback is called when the subscribed event happens.

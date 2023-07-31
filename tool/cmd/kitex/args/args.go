@@ -23,11 +23,11 @@ import (
 	"path/filepath"
 	"strings"
 
-	"github.com/cloudwego/kitex/tool/internal_pkg/generator"
-	"github.com/cloudwego/kitex/tool/internal_pkg/log"
-	"github.com/cloudwego/kitex/tool/internal_pkg/pluginmode/protoc"
-	"github.com/cloudwego/kitex/tool/internal_pkg/pluginmode/thriftgo"
-	"github.com/cloudwego/kitex/tool/internal_pkg/util"
+	"github.com/pjanthony2001/kitex/tool/internal_pkg/generator"
+	"github.com/pjanthony2001/kitex/tool/internal_pkg/log"
+	"github.com/pjanthony2001/kitex/tool/internal_pkg/pluginmode/protoc"
+	"github.com/pjanthony2001/kitex/tool/internal_pkg/pluginmode/thriftgo"
+	"github.com/pjanthony2001/kitex/tool/internal_pkg/util"
 )
 
 // EnvPluginMode is an environment that kitex uses to distinguish run modes.

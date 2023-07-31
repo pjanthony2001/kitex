@@ -26,9 +26,9 @@ import (
 	"github.com/apache/thrift/lib/go/thrift"
 	"github.com/cloudwego/frugal"
 
-	"github.com/cloudwego/kitex/pkg/protocol/bthrift"
-	"github.com/cloudwego/kitex/pkg/remote"
-	"github.com/cloudwego/kitex/pkg/remote/codec/perrors"
+	"github.com/pjanthony2001/kitex/pkg/protocol/bthrift"
+	"github.com/pjanthony2001/kitex/pkg/remote"
+	"github.com/pjanthony2001/kitex/pkg/remote/codec/perrors"
 )
 
 const (

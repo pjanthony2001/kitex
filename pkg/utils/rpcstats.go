@@ -19,8 +19,8 @@ package utils
 import (
 	"time"
 
-	"github.com/cloudwego/kitex/pkg/rpcinfo"
-	"github.com/cloudwego/kitex/pkg/stats"
+	"github.com/pjanthony2001/kitex/pkg/rpcinfo"
+	"github.com/pjanthony2001/kitex/pkg/stats"
 )
 
 // CalculateEventCost get events from rpcstats, and calculates the time duration of (end - start).

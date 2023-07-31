@@ -23,7 +23,7 @@ import (
 	"strconv"
 	"strings"
 
-	"github.com/cloudwego/kitex/pkg/generic/descriptor"
+	"github.com/pjanthony2001/kitex/pkg/generic/descriptor"
 )
 
 func assertType(expected, but descriptor.Type) error {

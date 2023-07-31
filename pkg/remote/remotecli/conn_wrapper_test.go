@@ -24,17 +24,17 @@ import (
 
 	"github.com/golang/mock/gomock"
 
-	mocksnetpoll "github.com/cloudwego/kitex/internal/mocks/netpoll"
-	mocksremote "github.com/cloudwego/kitex/internal/mocks/remote"
-	"github.com/cloudwego/kitex/pkg/discovery"
-	"github.com/cloudwego/kitex/pkg/rpcinfo/remoteinfo"
+	mocksnetpoll "github.com/pjanthony2001/kitex/internal/mocks/netpoll"
+	mocksremote "github.com/pjanthony2001/kitex/internal/mocks/remote"
+	"github.com/pjanthony2001/kitex/pkg/discovery"
+	"github.com/pjanthony2001/kitex/pkg/rpcinfo/remoteinfo"
 
-	"github.com/cloudwego/kitex/internal/test"
-	connpool2 "github.com/cloudwego/kitex/pkg/connpool"
-	"github.com/cloudwego/kitex/pkg/kerrors"
-	"github.com/cloudwego/kitex/pkg/remote/connpool"
-	"github.com/cloudwego/kitex/pkg/rpcinfo"
-	"github.com/cloudwego/kitex/pkg/utils"
+	"github.com/pjanthony2001/kitex/internal/test"
+	connpool2 "github.com/pjanthony2001/kitex/pkg/connpool"
+	"github.com/pjanthony2001/kitex/pkg/kerrors"
+	"github.com/pjanthony2001/kitex/pkg/remote/connpool"
+	"github.com/pjanthony2001/kitex/pkg/rpcinfo"
+	"github.com/pjanthony2001/kitex/pkg/utils"
 )
 
 var poolCfg = connpool2.IdleConfig{MaxIdlePerAddress: 100, MaxIdleGlobal: 100, MaxIdleTimeout: time.Second}

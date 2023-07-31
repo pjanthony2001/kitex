@@ -19,7 +19,7 @@ package invoke
 import (
 	"context"
 
-	"github.com/cloudwego/kitex/pkg/remote"
+	"github.com/pjanthony2001/kitex/pkg/remote"
 )
 
 // Handler is used to Call a Message.

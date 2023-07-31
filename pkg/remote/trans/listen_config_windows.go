@@ -23,7 +23,7 @@ import (
 	"net"
 	"syscall"
 
-	"github.com/cloudwego/kitex/pkg/remote"
+	"github.com/pjanthony2001/kitex/pkg/remote"
 )
 
 // NewListenConfig return an empty net.ListenConfig, for adjusting the Windows.

@@ -19,7 +19,7 @@ package utils
 import (
 	"testing"
 
-	"github.com/cloudwego/kitex/internal/test"
+	"github.com/pjanthony2001/kitex/internal/test"
 )
 
 func TestSlice_Push(t *testing.T) {
