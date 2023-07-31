@@ -17,6 +17,7 @@
 package generic
 
 import (
+	"fmt"
 	"context"
 	"sync/atomic"
 
@@ -28,6 +29,11 @@ import (
 	"github.com/cloudwego/kitex/pkg/remote/codec"
 	"github.com/cloudwego/kitex/pkg/remote/codec/perrors"
 	"github.com/cloudwego/kitex/pkg/serviceinfo"
+
+
+	"github.com/jhump/protoreflect/desc"
+	"github.com/jhump/protoreflect/dynamic"
+	"github.com/cloudwego/kitex/pkg/generic/proto"
 )
 
 var (
@@ -40,18 +46,19 @@ var (
 
 type jsonProtoCodec struct {
 	svcDsc           atomic.Value // *idl
-	provider         DescriptorProvider
+	provider         PbDescriptorProvider
 	codec            remote.PayloadCodec
 	binaryWithBase64 bool
 }
 
-func newJsonProtoCodec(p DescriptorProvider, codec remote.PayloadCodec) (*jsonProtoCodec, error) {
+func newJsonProtoCodec(p PbDescriptorProvider, codec remote.PayloadCodec) (*jsonProtoCodec, error) {
 	svc := <-p.Provide()
 	c := &jsonProtoCodec{codec: codec, provider: p, binaryWithBase64: true}
 	c.svcDsc.Store(svc)
 	go c.update()
 	return c, nil
 }
+// done
 
 func (c *jsonProtoCodec) update() {
 	for {
@@ -62,6 +69,7 @@ func (c *jsonProtoCodec) update() {
 		c.svcDsc.Store(svc)
 	}
 }
+//
 
 func (c *jsonProtoCodec) Marshal(ctx context.Context, msg remote.Message, out remote.ByteBuffer) error {
 	method := msg.RPCInfo().Invocation().MethodName()
@@ -71,11 +79,19 @@ func (c *jsonProtoCodec) Marshal(ctx context.Context, msg remote.Message, out re
 	if msg.MessageType() == remote.Exception {
 		return c.codec.Marshal(ctx, msg, out)
 	}
-	svcDsc, ok := c.svcDsc.Load().(*descriptor.ServiceDescriptor)
+	svcDsc, ok := c.svcDsc.Load().(*desc.ServiceDescriptor)
 	if !ok {
 		return perrors.NewProtocolErrorWithMsg("get parser ServiceDescriptor failed")
 	}
-	// wm, err := thrift.NewWriteJSON(svcDsc, method, msg.RPCRole() == remote.Client)
+
+	//https://pkg.go.dev/github.com/jhump/protoreflect@v1.8.2/desc#ServiceDescriptor.FindMethodByName
+
+
+
+	
+
+
+	wm, err := thrift.NewWriteJSON(svcDsc, method, msg.RPCRole() == remote.Client)
 
 	// wm, err :=
 	// if err != nil {
@@ -85,6 +101,19 @@ func (c *jsonProtoCodec) Marshal(ctx context.Context, msg remote.Message, out re
 	// msg.Data().(WithCodec).SetCodec(wm)
 
 	return c.codec.Marshal(ctx, msg, out)
+}
+
+func protoWriteJSON(pbSvc desc.ServiceDescriptor, method string, isClient bool) error {
+	mt := pbSvc.FindMethodByName(method)
+	if mt == nil {
+		return fmt.Errorf("method not found in pb descriptor: %v", method)
+	}
+
+	pbMsg := dynamic.NewMessage(mt.GetInputType())
+	err := pbMsg.Unmarshal(req.RawBody)
+	if err != nil {
+		return fmt.Errorf("unmarshal pb body error: %v", err)
+	}
 }
 
 func (c *jsonProtoCodec) Unmarshal(ctx context.Context, msg remote.Message, in remote.ByteBuffer) error {

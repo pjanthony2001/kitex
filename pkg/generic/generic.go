@@ -129,6 +129,15 @@ func SetBinaryWithBase64(g Generic, enable bool) error {
 	return nil
 }
 
+// JSONProtoGeneric json mapping generic.
+func JSONProtoGeneric(p PbDescriptorProvider) (Generic, error) {
+	codec, err := newJsonProtoCodec(p, thriftCodec)
+	if err != nil {
+		return nil, err
+	}
+	return &jsonProtoGeneric{codec: codec}, nil
+}
+
 var thriftCodec = thrift.NewThriftCodec()
 
 type binaryThriftGeneric struct{}
@@ -247,5 +256,29 @@ func (g *httpPbThriftGeneric) GetMethod(req interface{}, method string) (*Method
 }
 
 func (g *httpPbThriftGeneric) Close() error {
+	return g.codec.Close()
+}
+
+type jsonProtoGeneric struct {
+	codec *jsonProtoCodec
+}
+
+func (g *jsonProtoGeneric) Framed() bool {
+	return false
+}
+
+func (g *jsonProtoGeneric) PayloadCodecType() serviceinfo.PayloadCodec {
+	return serviceinfo.Thrift
+}
+
+func (g *jsonProtoGeneric) PayloadCodec() remote.PayloadCodec {
+	return g.codec
+}
+
+func (g *jsonProtoGeneric) GetMethod(req interface{}, method string) (*Method, error) {
+	return g.codec.getMethod(req, method)
+}
+
+func (g *jsonProtoGeneric) Close() error {
 	return g.codec.Close()
 }
